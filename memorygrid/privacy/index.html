@@ -45,7 +45,7 @@
       <table>
         <thead><tr><th>Data</th><th>When</th><th>Why</th></tr></thead>
         <tbody>
-          <tr><td>E-mail address and password</td><td>Only if you register with e-mail</td><td>Sign-in. The password is handled by Firebase Authentication; we never see it in plain text.</td></tr>
+          <tr><td>E-mail address and password</td><td>Only if you register with e-mail</td><td>Sign-in only. Your e-mail and password are kept by Firebase Authentication; they are not stored in the game database, and we never see your password in plain text.</td></tr>
           <tr><td>Account ID</td><td>When you register or play as a guest</td><td>Identifies your profile and saves your scores</td></tr>
           <tr><td>Username</td><td>You choose it (guests get a random one)</td><td>Your public name on the leaderboard and in online matches</td></tr>
           <tr><td>Avatar</td><td>When you pick an emoji avatar or a photo</td><td>Shown next to your name (see section 2)</td></tr>
@@ -58,26 +58,28 @@
     <p>Sound settings and your current game are saved only on your device. We do <strong>not</strong> collect your location or contacts, and the Game does <strong>not</strong> use your microphone or camera. We do <strong>not sell</strong> your personal data. There are no in-app purchases.</p>
 
     <h2 id="photo">2. Profile picture</h2>
-    <p>If you choose a photo as your avatar, the Game asks for access to your photo library and lets you pick one picture. <strong>The photo itself is not uploaded</strong> to our servers; only a reference to the file on your phone is saved with your profile. You can switch to an emoji avatar at any time.</p>
+    <p>If you choose a photo as your avatar, the Game asks for access to your photo library and lets you pick one picture. <strong>The photo itself is not uploaded</strong> to our servers; only a reference to the file on your phone is saved with your profile. Photo avatars are shown only on your own phone; other players see a default icon instead. You can switch to an emoji avatar at any time.</p>
 
     <h2 id="leaderboard">3. The leaderboard is public</h2>
-    <div class="note"><p>Your <strong>username</strong>, <strong>avatar</strong> and <strong>total score</strong> can be seen by other players on the leaderboard. Your <strong>e-mail address is not shown</strong> to other players.</p></div>
+    <div class="note"><p>Only your <strong>username</strong>, <strong>emoji avatar</strong> and <strong>total score</strong> are published on the leaderboard and can be seen by other players. Your e-mail address and the rest of your profile are private: only you can read them.</p></div>
 
     <h2 id="ads">4. Ads</h2>
     <p>The Game is free and shows ads from <strong>Google AdMob</strong>: a banner and an ad between some games. Ads are limited to a family-friendly content rating (G). Google may use your device’s advertising ID and ad interaction data to show and measure ads (which can include personalised ads), limit how often you see them and prevent fraud.</p>
-    <p>You can reset or delete your advertising ID, or turn off personalised ads, in your phone’s settings. Learn more: <a href="https://policies.google.com/technologies/ads" rel="noopener">How Google uses data in ads</a>.</p>
+    <p><strong>Your choice:</strong> If you are in the European Economic Area, the UK or Switzerland, the Game shows Google’s consent form before any ads are requested, and you can change your choice at any time in <strong>Settings → Privacy &amp; Ad Consent</strong>. On iPhone, the Game asks for permission to track (Apple App Tracking Transparency); if you choose “Ask App Not to Track”, ads are not personalised using your advertising identifier.</p>
+    <p>You can also reset or delete your advertising ID, or turn off personalised ads, in your phone’s settings. Learn more: <a href="https://policies.google.com/technologies/ads" rel="noopener">How Google uses data in ads</a>.</p>
 
     <h2 id="providers">5. Service providers</h2>
     <ul>
       <li><strong>Google Firebase</strong> – sign-in (Firebase Authentication) and database (Realtime Database). <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacy and security in Firebase</a></li>
       <li><strong>Google AdMob</strong> – ads. <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></li>
-      <li><strong>Google Play</strong> – app delivery and updates.</li>
+      <li><strong>Google Play</strong> and <strong>Apple App Store</strong> – app delivery and updates.</li>
     </ul>
 
     <h2 id="delete">6. Retention and deletion</h2>
     <ul>
       <li>We keep your profile and scores for as long as your account exists. Online match rooms are deleted when the match ends.</li>
-      <li>To delete your account and all its data, send us a request by e-mail – see <a href="../delete-account/">how to delete your account</a>. We process requests within 30 days.</li>
+      <li>You can delete your account and all its data <strong>in the Game</strong>: Settings → Delete Account. It is deleted immediately (login, profile, scores and leaderboard entry).</li>
+      <li>You can also ask us by e-mail – see <a href="../delete-account/">how to delete your account</a>. We process e-mail requests within 30 days.</li>
     </ul>
 
     <h2 id="children">7. Children</h2>
