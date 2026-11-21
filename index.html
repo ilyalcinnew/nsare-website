@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>N-Sare Smart Solutions Inc.</title>
 <meta name="description" content="N-Sare Smart Solutions Inc. — Smart Solutions for Everyone.">
+<link rel="icon" href="/assets/img/nsare-favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/img/nsare-favicon-48.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/assets/img/nsare-apple-touch-icon.png">
 <style>
   :root {
     --navy: #16264a;
@@ -40,11 +43,17 @@
     padding: 14px 24px;
   }
   .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-  .brand-mark { width: 34px; height: 34px; }
-  .brand-name { font-weight: 800; font-size: 0.95rem; color: var(--navy); letter-spacing: 0.2px; }
+  .brand-mark { width: 38px; height: 38px; }
+  .brand-text { display: flex; flex-direction: column; line-height: 1.05; }
+  .brand-name { font-weight: 800; font-size: 1.15rem; color: var(--navy); letter-spacing: 0.2px; }
+  .brand-sub { font-weight: 700; font-size: 0.6rem; letter-spacing: 2.2px; color: var(--muted); margin-top: 3px; }
   .nav-links { display: flex; gap: 26px; font-size: 0.9rem; font-weight: 600; }
   .nav-links a { text-decoration: none; color: var(--muted); }
   .nav-links a:hover { color: var(--navy); }
+  @media (max-width: 560px) {
+    .nav-inner { flex-wrap: wrap; row-gap: 10px; padding: 12px 16px; }
+    .nav-links { width: 100%; justify-content: space-between; gap: 12px; }
+  }
 
   /* ---- Hero ---- */
   .hero {
@@ -189,30 +198,26 @@
   <div class="nav-inner">
     <a class="brand" href="#top">
       <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="N-Sare Smart Solutions logo">
-        <path d="M60 30 C 42 30 42 46 55 50 C 68 54 68 70 50 70" fill="none" stroke="#d9a441" stroke-width="7" stroke-linecap="round"/>
-        <path d="M30 72 L30 28" stroke="#16264a" stroke-width="11" stroke-linecap="round"/>
-        <path d="M30 28 L70 72" stroke="#16264a" stroke-width="11" stroke-linecap="round"/>
-        <path d="M70 72 L70 28" stroke="#16264a" stroke-width="11" stroke-linecap="round"/>
-        <path d="M70 26 L88 26 L70 44 Z" fill="#d9a441"/>
+        <path d="M78 22 A40 40 0 1 0 90 50" fill="none" stroke="#d9a441" stroke-width="8" stroke-linecap="round"/>
+        <circle cx="90" cy="31" r="5.5" fill="#d9a441"/>
+        <path d="M34 68 V32 L66 68 V32" fill="none" stroke="#16264a" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
       </svg>
-      <span class="brand-name">N-SARE SMART SOLUTIONS</span>
+      <span class="brand-text"><span class="brand-name">N-Sare</span><span class="brand-sub">SMART SOLUTIONS</span></span>
     </a>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#approach">Approach</a>
-      <a href="#contact">Contact</a>
       <a href="/games/">Games</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
 </nav>
 
 <header class="hero" id="top">
   <svg class="hero-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="N-Sare Smart Solutions logo">
-    <path d="M60 30 C 42 30 42 46 55 50 C 68 54 68 70 50 70" fill="none" stroke="#d9a441" stroke-width="7" stroke-linecap="round"/>
-    <path d="M30 72 L30 28" stroke="#eef1f8" stroke-width="11" stroke-linecap="round"/>
-    <path d="M30 28 L70 72" stroke="#eef1f8" stroke-width="11" stroke-linecap="round"/>
-    <path d="M70 72 L70 28" stroke="#eef1f8" stroke-width="11" stroke-linecap="round"/>
-    <path d="M70 26 L88 26 L70 44 Z" fill="#d9a441"/>
+    <path d="M78 22 A40 40 0 1 0 90 50" fill="none" stroke="#d9a441" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="90" cy="31" r="5.5" fill="#d9a441"/>
+    <path d="M34 68 V32 L66 68 V32" fill="none" stroke="#eef1f8" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
   </svg>
   <h1>N-Sare Smart Solutions Inc.</h1>
   <p class="tagline">Smart Solutions for Everyone.</p>
